@@ -16,8 +16,17 @@ a img {
     width: 20vw;
     height: 20vh;
     object-fit: cover;
-    display: flex;
+    display: block;
+    box-shadow: 2px 2px 1px #ccc;
+
 }
+
+a img:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+
 a {
     /* border: 2px solid red; */
     width: 20vw;
@@ -29,10 +38,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#huy {
-    /* gap: 1rem; */
 }
 
 h5 {
@@ -48,9 +53,42 @@ span {
     font-size: smaller;
     text-align: center;
     /* line-height: 2rem; */
-    color: brown;
+    color: chocolate;
 }
 
+
+#blur.active {
+    filter: blur(25px);
+}
+
+#popup {
+    position: absolute;
+    display: flex;
+    flex-direction: ;
+    /* transform: translate(-50%); */
+    /* width: auto; */
+    background: #fff;
+    /* visibility: hidden; */
+    /* opacity: 0.7; */
+    transition: 0.5s;
+}
+
+#popup.active {
+    visibility: visible;
+    /* opacity: 1; */
+    transition: 0.5s;
+    
+
+}
+
+@media (max-width: 1200px) {
+    #popup {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+}
 
 
 
