@@ -16,6 +16,7 @@ a img {
     width: 20vw;
     height: 20vh;
     object-fit: cover;
+    display: flex;
 }
 a {
     /* border: 2px solid red; */
@@ -23,7 +24,11 @@ a {
     text-decoration: none;
     text-transform: capitalize;
     display: block;
-    gap: 10rem !important;
+    /* gap: 10rem !important; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #huy {
