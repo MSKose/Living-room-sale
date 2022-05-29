@@ -13,7 +13,7 @@ body {
 
 a img {
     border-radius: 30px;
-    width: 20vw;
+    width: 360px;
     height: 20vh;
     object-fit: cover;
     display: block;
@@ -81,22 +81,36 @@ span {
     transition: 0.5s;
 }
 
-@media (max-width: 1200px) {
-    #popup {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-    }
 
-    #container-row {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-
-    body {
-        background-color: blue;
+@media (max-width: 1400px) {
+    #container-row a{
+        flex: 0 0 auto;
+        width: 50%;
     }
 }
+
+@media (max-width: 1000px) {
+    #container-row a{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+
+// @media (max-width: 1200px) {
+//     #popup {
+//         display: flex;
+//         flex-direction: column;
+//         /* justify-content: center; */
+//         align-items: center;
+//     }
+
+    
+
+//     body {
+//         background-color: blue;
+//     }
+// }
 
 
 
