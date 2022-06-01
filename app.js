@@ -5,6 +5,10 @@ function myFunction() {
     popup.classList.toggle('active');
 }
 
+document.querySelector('.toggle').addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+})
+
 
 
 // function match(x) {
